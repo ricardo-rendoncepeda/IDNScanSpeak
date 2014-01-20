@@ -12,15 +12,15 @@
 @interface IDNViewController () <AVCaptureMetadataOutputObjectsDelegate, AVSpeechSynthesizerDelegate>
 
 // Scan
-@property (strong, nonatomic) AVCaptureSession* session;
-@property (strong, nonatomic) AVCaptureDevice* device;
-@property (strong, nonatomic) AVCaptureDeviceInput* input;
-@property (strong, nonatomic) AVCaptureMetadataOutput* output;
-@property (strong, nonatomic) AVCaptureVideoPreviewLayer* preview;
+@property (strong, nonatomic, readwrite) AVCaptureSession* session;
+@property (strong, nonatomic, readwrite) AVCaptureDevice* device;
+@property (strong, nonatomic, readwrite) AVCaptureDeviceInput* input;
+@property (strong, nonatomic, readwrite) AVCaptureMetadataOutput* output;
+@property (strong, nonatomic, readwrite) AVCaptureVideoPreviewLayer* preview;
 
 // Speak
-@property (strong, nonatomic) AVSpeechSynthesizer* synthesizer;
-@property (strong, nonatomic) AVSpeechUtterance* utterance;
+@property (strong, nonatomic, readwrite) AVSpeechSynthesizer* synthesizer;
+@property (strong, nonatomic, readwrite) AVSpeechUtterance* utterance;
 
 @end
 
